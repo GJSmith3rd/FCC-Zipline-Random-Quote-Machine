@@ -1,16 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700|Dancing+Script:400,700);
 h1 {
-  font-family: 'Expletus Sans', cursive;;
+  font-family: 'Oleo Script Swash Caps', cursive;;
   font-weight: 700;
   color: darkred;
   text-shadow: 2px 1px 2px lightblue;
 }
 h2 {
-  font-family: 'Montez', cursive;;
+  font-family: 'Dancing Script', cursive;;
   color: white;
   text-shadow: 2px 1px 2px #144867;
 }
 h3 {
-  font-family: 'Expletus Sans', cursive;;
+  font-family: 'Oleo Script Swash Caps', cursive;;
   font-weight: 700;
   color: darkred;
   text-shadow: 2px 1px 2px lightblue;
@@ -89,14 +90,14 @@ p {
   background-color: lightgrey;
 }
 .navbar-brand {
-  font-family: 'Expletus Sans', cursive;;
+  font-family: 'Oleo Script Swash Caps', cursive;;
   color: #266b8e !important;
 }
 .navbar-brand:hover {
   color: darkred !important;
 }
 ul.nav li a {
-  font-family: 'Montez', cursive;;
+  font-family: 'Dancing Script', cursive;;
   color: #266b8e !important;
 }
 ul.nav li a:hover {
@@ -107,7 +108,7 @@ ul.nav li a:hover {
   padding-top: 25px;
 }
 .footer a {
-  font-family: 'Montez', cursive;;
+  font-family: 'Dancing Script', cursive;;
   padding-right: 10px;
   padding-left: 10px;
   color: #266b8e;
@@ -118,7 +119,7 @@ ul.nav li a:hover {
   text-decoration: none;
 }
 #footer {
-  font-family: 'Expletus Sans', cursive;;
+  font-family: 'Oleo Script Swash Caps', cursive;;
   padding-top: 15px;
   padding-left: 10px;
   font-size: 10px;
