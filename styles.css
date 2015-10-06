@@ -2,26 +2,26 @@
 h1 {
   font-family: 'Oleo Script Swash Caps', cursive;;
   font-weight: 700;
-  color: darkred;
-  text-shadow: 2px 1px 2px lightblue;
+  color: darkorange;
+  text-shadow: 2px 1px 2px orange;
 }
 h2 {
   font-family: 'Dancing Script', cursive;;
-  color: white;
-  text-shadow: 2px 1px 2px #144867;
+  color: orange;
+  text-shadow: 2px 1px 2px black;
 }
 h3 {
-  font-family: 'Oleo Script Swash Caps', cursive;;
+  font-family: 'Open Sans', sans-serif;;
   font-weight: 700;
-  color: darkred;
-  text-shadow: 2px 1px 2px lightblue;
+  color: darkgreen;
+  text-shadow: 2px 1px 2px darkgrey;
 }
 @media only screen and (min-width: 1200px) {
   h1 {
-    font-size: 56px;
+    font-size: 76px;
   }
   h2 {
-    font-size: 46px;
+    font-size: 66px;
   }
   h3 {
     font-size: 36px;
@@ -29,10 +29,10 @@ h3 {
 }
 @media only screen and (min-width: 980px) and (max-width: 1199px) {
   h1 {
-    font-size: 46px;
+    font-size: 66px;
   }
   h2 {
-    font-size: 36px;
+    font-size: 56px;
   }
   h3 {
     font-size: 31px;
@@ -40,10 +40,10 @@ h3 {
 }
 @media only screen and (min-width: 768px) and (max-width: 979px) {
   h1 {
-    font-size: 36px;
+    font-size: 56px;
   }
   h2 {
-    font-size: 26px;
+    font-size: 46px;
   }
   h3 {
     font-size: 26px;
@@ -51,10 +51,10 @@ h3 {
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   h1 {
-    font-size: 26px;
+    font-size: 46px;
   }
   h2 {
-    font-size: 16px;
+    font-size: 36px;
   }
   h3 {
     font-size: 21px;
@@ -62,10 +62,10 @@ h3 {
 }
 @media only screen and (max-width: 480px) {
   h1 {
-    font-size: 16px;
+    font-size: 36px;
   }
   h2 {
-    font-size: 6px;
+    font-size: 26px;
   }
   h3 {
     font-size: 16px;
@@ -75,7 +75,7 @@ p {
   font-family: 'Open Sans', sans-serif;;
   font-weight: 600;
   font-size: 20px;
-  color: black;
+  color: orange;
 }
 #navbar {
   background-color: #e7e7e7;
@@ -91,17 +91,17 @@ p {
 }
 .navbar-brand {
   font-family: 'Oleo Script Swash Caps', cursive;;
-  color: #266b8e !important;
+  color: darkgreen !important;
 }
 .navbar-brand:hover {
-  color: darkred !important;
+  color: darkorange !important;
 }
 ul.nav li a {
   font-family: 'Dancing Script', cursive;;
-  color: #266b8e !important;
+  color: darkgreen !important;
 }
 ul.nav li a:hover {
-  color: darkred !important;
+  color: darkorange !important;
   background-color: lightgrey !important;
 }
 .footer {
@@ -111,11 +111,11 @@ ul.nav li a:hover {
   font-family: 'Dancing Script', cursive;;
   padding-right: 10px;
   padding-left: 10px;
-  color: #266b8e;
+  color: darkgreen;
   margin-top: 25px;
 }
 .footer a:hover {
-  color: darkred;
+  color: darkorange;
   text-decoration: none;
 }
 #footer {
@@ -123,7 +123,7 @@ ul.nav li a:hover {
   padding-top: 15px;
   padding-left: 10px;
   font-size: 10px;
-  color: #266b8e;
+  color: darkgreen;
 }
 .home {
   display: table;
@@ -134,4 +134,8 @@ ul.nav li a:hover {
 }
 .jumbotron {
   margin-top: 70px;
+}
+#link {
+  color: orange;
+  text-shadow: 1px 1px 1px black;
 }

@@ -4,19 +4,22 @@
 @accentFont: ~"'Dancing Script', cursive;";
 @textFont: ~"'Open Sans', sans-serif;";
 
-@h1Color: darkred;
-@h1ShadowColor: lightblue;
+@h1Color: darkorange;
+@h1ShadowColor: orange;
 
-@h2Color: white;
-@h2ShadowColor: #144867;
+@h2Color: orange;
+@h2ShadowColor: black;
 
-@navColor: #266B8E;
-@navColorHover: darkred;
+@h3Color: darkgreen;
+@h3ShadowColor: darkgrey;
+
+@navColor: darkgreen;
+@navColorHover: darkorange;
 @navBackgroundColor: #E7E7E7;
 @navBackgroundColorHover: lightgrey;
 
-@textColor: black;
-@textColorLight: white;
+@textColor: orange;
+@textShadowColor: black;
 
 @shadowColor: darkgrey;
 @accentShadowColor: darkred;
@@ -24,13 +27,13 @@
 @greyShadow: rgba(0, 0, 0, 0.3);
 @blackShadow: rgba(0, 0, 0, 0.7);
 
-@h1-font-size--xlarge: 56px;
+@h1-font-size--xlarge: 76px;
 @h1-font-size--large: @h1-font-size--xlarge - 10;
 @h1-font-size--medium: @h1-font-size--large - 10;
 @h1-font-size--small: @h1-font-size--medium - 10;
 @h1-font-size--xsmall: @h1-font-size--small - 10;
 
-@h2-font-size--xlarge: 46px;
+@h2-font-size--xlarge: 66px;
 @h2-font-size--large: @h2-font-size--xlarge - 10;
 @h2-font-size--medium: @h2-font-size--large - 10;
 @h2-font-size--small: @h2-font-size--medium - 10;
@@ -68,10 +71,10 @@ h2 {
 	text-shadow: 2px 1px 2px @h2ShadowColor;
 }
 h3 {
-	font-family: @mainFont;
+	font-family: @textFont;
 	font-weight: 700;
-	color: @h1Color;
-	text-shadow: 2px 1px 2px @h1ShadowColor;
+	color: @h3Color;
+	text-shadow: 2px 1px 2px @h3ShadowColor;
 }
 @media only screen and (min-width: @screen-xlg-min) {
 	h1 {
@@ -195,4 +198,8 @@ ul.nav li a {
 }
 .jumbotron {
 	margin-top: 70px;
+}
+#link {
+	color: @textColor;
+	text-shadow: 1px 1px 1px @textShadowColor;
 }

@@ -2,7 +2,7 @@
 $(document).ready(function() {
   getData();
 
-  $('#link').click(function() {
+  $('#newQuote').click(function() {
     getData();
   });
   $('#tweet').click(function() {
@@ -29,9 +29,10 @@ function getData() {
 function updateHTML(res) {
   console.log(res);
 
-  $('h3').text(res.quoteText);
-  $('h2').text(res.quoteAuthor);
+  $('#quote').text(res.quoteText);
+  $('#author').text(res.quoteAuthor);
   $('#link').attr('href', res.quoteLink);
+
   console.log(res.quoteText.length + res.quoteAuthor.length);
   if (res.quoteText.length + res.quoteAuthor.length > 140) {
     console.log('>140');
