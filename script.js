@@ -1,8 +1,12 @@
 /* global $ */
 $(document).ready(function() {
   getData();
-  $('.btn').click(function() {
+
+  $('#link').click(function() {
     getData();
+  });
+  $('#tweet').click(function() {
+    tweetQuote();
   });
 });
 
@@ -18,15 +22,28 @@ function getData() {
     },
     dataType: 'jsonp',
     jsonp: 'jsonp',
-    jsonpCallback: 'updateData'
+    jsonpCallback: 'updateHTML'
   });
 }
 
-function updateData(response) {
-  console.log(response);
+function updateHTML(res) {
+  console.log(res);
 
-  $('h3').text(response.quoteText);
-  $('h2').text(response.quoteAuthor);
-  $('#link').attr('href', response.quoteLink);
+  $('h3').text(res.quoteText);
+  $('h2').text(res.quoteAuthor);
+  $('#link').attr('href', res.quoteLink);
+  console.log(res.quoteText.length + res.quoteAuthor.length);
+  if (res.quoteText.length + res.quoteAuthor.length > 140) {
+    console.log('>140');
+    $('#tweet').hide();
+  } else {
+    console.log('<140');
+    $('#tweet').show();
+    tweetQuote();
+  }
 
+}
+
+function tweetQuote(res) {
+  console.log('Tweet Quote!');
 }
