@@ -1,31 +1,32 @@
 /* global $ */
 $(document).ready(function() {
-
-  $('#getQuote').click(function () {
+  getData();
+  $('.btn').click(function() {
     getData();
   });
-
-  var getData = function() {
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://labs.bible.org/api/?passage=random&formatting=plain&type=json', false);
-    xhr.send();
-
-    console.log(xhr.status);
-    console.log(xhr.statusText);
-    console.log(xhr.response);
-
-    var str = xhr.responseText;
-    var newStr = str.replace('[', '').replace(']', '');
-
-    var parseStr = JSON.parse(newStr);
-    console.log(parseStr.bookname + ' ' + parseStr.chapter + ':' + parseStr.verse);
-    console.log(parseStr.text);
-
-    $('h2').text(parseStr.text);
-    $('h3').text(parseStr.bookname + ' ' + parseStr.chapter + ':' + parseStr.verse);
-
-  };
-
-  getData();
-
 });
+
+function getData() {
+  $.ajax({
+    type: 'POST',
+    crossDomain: true,
+    url: 'http://api.forismatic.com/api/1.0/',
+    data: {
+      method: 'getQuote',
+      format: 'jsonp',
+      lang: 'en'
+    },
+    dataType: 'jsonp',
+    jsonp: 'jsonp',
+    jsonpCallback: 'updateData'
+  });
+}
+
+function updateData(response) {
+  console.log(response);
+
+  $('h3').text(response.quoteText);
+  $('h2').text(response.quoteAuthor);
+  $('#link').attr('href', response.quoteLink);
+
+}
