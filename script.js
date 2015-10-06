@@ -5,9 +5,7 @@ $(document).ready(function() {
   $('#newQuote').click(function() {
     getData();
   });
-  $('#tweet').click(function() {
-    tweetQuote();
-  });
+
 });
 
 function getData() {
@@ -33,18 +31,23 @@ function updateHTML(res) {
   $('#author').text(res.quoteAuthor);
   $('#link').attr('href', res.quoteLink);
 
+  var combinedQuote = res.quoteAuthor + ' - ' + res.quoteText;
+  console.log(combinedQuote);
+
   console.log(res.quoteText.length + res.quoteAuthor.length);
+  console.log($('#twitter').attr('data-url'));
   if (res.quoteText.length + res.quoteAuthor.length > 140) {
     console.log('>140');
     $('#tweet').hide();
   } else {
     console.log('<140');
     $('#tweet').show();
-    tweetQuote();
   }
 
 }
 
 function tweetQuote(res) {
+  console.log(res);
   console.log('Tweet Quote!');
+
 }
