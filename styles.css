@@ -127,10 +127,8 @@ ul.nav li a:hover {
 }
 .home {
   display: table;
-  background: url(http://i.imgur.com/AIucynO.jpg) no-repeat center center fixed;
-  height: 1000px;
   position: relative;
   width: 100%;
   background-size: cover;
-  padding-top: 150px;
+  padding-top: 35px;
 }
