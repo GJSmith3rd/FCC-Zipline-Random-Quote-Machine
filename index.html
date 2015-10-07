@@ -111,27 +111,8 @@
       <h3 id="quote"> Quote</h3>
 
       <div id="tweetDiv">
-        <a href="https://twitter.com/share" class="twitter-share-button tweetBtn" data-url="http://URL" data-text="SITE" data-count="none">Tweet</a>
+        <a href="https://twitter.com/share" class="twitter-share-button tweetBtn" data-text="SITE" data-count="none">Tweet</a>
       </div>
-
-      <script>
-        window.twttr = (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0],
-            t = window.twttr || {};
-          if (d.getElementById(id)) return t;
-          js = d.createElement(s);
-          js.id = id;
-          js.src = "https://platform.twitter.com/widgets.js";
-          fjs.parentNode.insertBefore(js, fjs);
-
-          t._e = [];
-          t.ready = function(f) {
-            t._e.push(f);
-          };
-
-          return t;
-        }(document, "script", "twitter-wjs"));
-      </script>
 
       <br><a id="link" href="">Forismatic <i class="fa fa-external-link"></i></a>
 
