@@ -22,6 +22,7 @@ function getData() {
     jsonp: 'jsonp',
     jsonpCallback: 'updateHTML'
   });
+
 }
 
 function updateHTML(res) {
@@ -35,13 +36,25 @@ function updateHTML(res) {
   console.log(combinedQuote);
 
   console.log(res.quoteText.length + res.quoteAuthor.length);
-  console.log($('#twitter').attr('data-url'));
-  if (res.quoteText.length + res.quoteAuthor.length > 140) {
+
+  if (combinedQuote.length > 140) {
     console.log('>140');
-    $('#tweet').hide();
+    $('#tweetDiv').empty();
   } else {
     console.log('<140');
-    $('#tweet').show();
+    var beginA = '<a ';
+    var hrefA = 'href="https://twitter.com/share" ';
+    var classA = 'class="twitter-share-button tweetBtn" ';
+    var dataUrlA = 'data-url="' + res.quoteLink + '" ';
+    var dataTextA = 'data-text="' + combinedQuote + '" ';
+    var dataCntA = 'data-count="none"';
+    var endA = '>Tweet</a>';
+    var tweetA = beginA + hrefA + classA + dataUrlA + dataTextA + dataCntA + endA;
+    console.log(tweetA);
+    $('#tweetDiv').empty();
+    $('#tweetDiv').append(tweetA);
+    $.getScript('https://platform.twitter.com/widgets.js');
+    // twttr.widgets.load();
   }
 
 }
