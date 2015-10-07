@@ -27,32 +27,32 @@ function getData() {
 }
 
 function updateHTML(res) {
-  console.log(res);
 
   $('#quote').text(res.quoteText);
   $('#author').text(res.quoteAuthor);
   $('#link').attr('href', res.quoteLink);
 
   var combinedQuote = res.quoteAuthor + ' - ' + res.quoteText;
-  console.log(combinedQuote);
 
-  console.log(res.quoteText.length + res.quoteAuthor.length);
+  console.log(combinedQuote + res.quoteLink);
+  console.log(combinedQuote.length + res.quoteLink.length - 13);
 
-  if (combinedQuote.length > 140) {
-    console.log('>140');
+  if (combinedQuote.length + res.quoteLink.length - 13 >= 140) {
 
+    console.log('>=140');
     $('#tweetDiv').empty();
+
   } else {
     console.log('<140');
 
     var beginA = '<a ';
     var hrefA = 'href="https://twitter.com/share" ';
     var classA = 'class="twitter-share-button tweetBtn" ';
-    var dataUrlA = 'data-url="none" ';
+    var dataUrlA = 'data-url="' + res.quoteLink + '" ';
     var dataTextA = 'data-text="' + combinedQuote + '" ';
     var dataCntA = 'data-count="none"';
     var endA = '>Tweet</a>';
-    var tweetA = beginA + hrefA + classA + dataTextA + dataCntA + endA;
+    var tweetA = beginA + hrefA + classA + dataUrlA + dataTextA + dataCntA + endA;
 
     console.log(tweetA);
 
@@ -63,11 +63,5 @@ function updateHTML(res) {
     $.getScript('https://platform.twitter.com/widgets.js');
     // twttr.widgets.load();
   }
-
-}
-
-function tweetQuote(res) {
-  console.log(res);
-  console.log('Tweet Quote!');
 
 }
