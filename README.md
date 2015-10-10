@@ -1,5 +1,5 @@
 # GJSmith3rd/FCC-Zipline-Random-Quote-Machine
-[FreeCodeCamp Zipline Random-Quote-Machine](hhttps://github.com/GJSmith3rd/FCC-Zipline-Random-Quote-Machine)
+[FreeCodeCamp Zipline Random-Quote-Machine](https://github.com/GJSmith3rd/FCC-Zipline-Random-Quote-Machine)
 --------------------------------
 FreeCodeCamp, Zipline Project, Random Quote Machine.
 
