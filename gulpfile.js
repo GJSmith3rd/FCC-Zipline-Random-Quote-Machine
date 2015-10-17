@@ -77,9 +77,6 @@ gulp.task('help', $.taskListing);
  */
 gulp.task('default', ['serve-dev']);
 
-
-//////////////////////////////////////
-
 /*
  * CLEAN
  *
@@ -89,7 +86,6 @@ gulp.task('default', ['serve-dev']);
 function clean(path, done) {
     log('***Cleaning ' + $.util.colors.blue(path));
     del(path, done);
-}
 
 /*
  * SERVE
@@ -97,6 +93,7 @@ function clean(path, done) {
  * start node sever via nodemon with nodemOptions
  *
  */
+ }
 function serve() {
     log('***Start pre processes and node server...');
 
