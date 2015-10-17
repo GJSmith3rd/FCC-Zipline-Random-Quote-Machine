@@ -8,6 +8,7 @@ $(document).ready(function() {
   });
 
 });
+
 function getData() {
 
   $.ajax({
@@ -26,6 +27,7 @@ function getData() {
   });
 
 }
+
 function updateHTML(res) {
 
   $('#quote').text(res.quoteText);
