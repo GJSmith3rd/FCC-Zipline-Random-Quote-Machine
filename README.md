@@ -3,8 +3,8 @@
 --------------------------------
 FreeCodeCamp, Zipline Project, Random Quote Machine.
 
-# GJSmith3rd/gjsmith3rd.github.io
-[mobileCreature Web Design Studio](http://gjsmith3rd.github.io/)
+# mobilecreature.github.io
+[mobileCreature Web Design Studio](http://mobilecreature.github.io/)
 --------------------------------
 MobileCreature and Gilbert Smith portfolio site.
 
