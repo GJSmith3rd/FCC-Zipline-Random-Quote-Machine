@@ -8,7 +8,6 @@ FreeCodeCamp, Zipline Project, Random Quote Machine.
 --------------------------------
 MobileCreature and Gilbert Smith portfolio site.
 
-A [CodePen](http://codepen.io/GJSmith3rd/pen/RWojRp) and [FreeCodeCamp](http://freecodecamp.com/gjsmith3rd), Zipline Project 2 - Random Quote Machine, by [Gilbert Smith](http://codepen.io/GJSmith3rd) on [CodePen](http://codepen.io/).
+A [CodePen - Random Quote Machine](http://codepen.io/GJSmith3rd/full/RWojRp) and [FreeCodeCamp - GJSmith3rd](http://freecodecamp.com/gjsmith3rd), Zipline Project - Random Quote Machine, by [CodePen - Gilbert Smith](http://codepen.io/GJSmith3rd) on [CodePen](http://codepen.io/).
 
-[License](http://codepen.io/GJSmith3rd/pen/RWojRp).
-[FreeCodeCamp](http://freecodecamp.com/gjsmith3rd).
+[FreeCodeCamp](http://freecodecamp.com).
