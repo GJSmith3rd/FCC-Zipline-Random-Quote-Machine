@@ -1,9 +1,28 @@
 /* global $ */
-$(document).ready(function() {
+
+$(document).ready(function () {
+
+  var stopGoogleAds = true;
+
+  switch (true) {
+    //Remove Google Analytics Codepen - Run Google Ads
+    case (/codepen/.test(location.hostname)):
+      $.getScript('//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js');
+      break;
+    default:
+      //Remove Google Adsense and Google Github + Codepen Anaytics
+      //Test for local dev network
+      if (stopGoogleAds) {
+        // Remove Adsense from DOM
+        $('.adsense').remove();
+      } else {
+        $.getScript('//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js');
+      }
+  }
 
   getData();
 
-  $('#newQuote').click(function() {
+  $('#newQuote').click(function () {
     getData();
   });
 

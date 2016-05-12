@@ -15,7 +15,7 @@
 
 @navColor: darkgreen;
 @navColorHover: darkorange;
-@navBackgroundColor: #E7E7E7;
+@navBackgroundColor: #DFF0D8;
 @navBackgroundColorHover: lightgrey;
 
 @textColor: orange;
@@ -140,7 +140,7 @@ p {
 
 }
 #navbar {
-	background-color: @navBackgroundColor;
+	background-color: @navBackgroundColor !important;
 	filter:none;
 }
 .navbar-header {
@@ -160,6 +160,7 @@ p {
 ul.nav li a {
 	font-family: @accentFont;
 	color: @navColor !important;
+	background-color: @navBackgroundColor !important;
 	&:hover {
 		color: @navColorHover !important;
 		background-color: lightgrey !important;
@@ -189,8 +190,6 @@ ul.nav li a {
 }
 .home {
 	display: table;
-	// background: url(http://res.cloudinary.com/mobilecreature/image/upload/v1456549400/FreeCodeCamp/Ziplines/Random-Quote-Machine/9PTZ4iW.png) no-repeat center center fixed;
-	// height:1000px;
 	position: relative;
 	width: 100%;
 	background-size: cover;
@@ -198,6 +197,7 @@ ul.nav li a {
 }
 .jumbotron {
 	margin-top: 70px;
+	background-color: #DFF0D8;
 }
 #link {
 	color: @textColor;
